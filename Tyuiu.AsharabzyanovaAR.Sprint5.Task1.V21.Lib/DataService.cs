@@ -6,7 +6,7 @@ namespace Tyuiu.AsharabzyanovaAR.Sprint5.Task1.V21.Lib
     {
         public string SaveToFileTextData(int startValue, int stopValue)
         {
-            string path = Path.Combine(@"D:\Рабочий Стол\t\Tyuiu.AsharabzyanovaAR.Sprint5\Tyuiu.AsharabzyanovaAR.Sprint5.Task1.V21\bin\Debug\OutPutFileTask1.txt");
+            string path = Path.GetTempFileName();
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
             if (fileExists)
