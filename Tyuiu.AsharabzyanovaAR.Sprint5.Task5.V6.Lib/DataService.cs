@@ -3,7 +3,7 @@ using System.IO;
 using System.Globalization;
 namespace Tyuiu.AsharabzyanovaAR.Sprint5.Task5.V6.Lib
 {
-    public class DataService : ISprint5Task5V5
+    public class DataService : ISprint5Task5V6
     {
         public double LoadFromDataFile(string path)
         {
