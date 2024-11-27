@@ -19,12 +19,17 @@ namespace Tyuiu.AsharabzyanovaAR.Sprint5.Task5.V6.Lib
                     foreach (string number in numbers)
                     {
                         double number_ = double.Parse(number, CultureInfo.InvariantCulture);
-                        k += 1;
-                        res = res + Math.Round(number_, 3);
+                        if (number_ != Convert.ToInt32(number_))
+                        {
+                            k += 1;
+                            res = res + Math.Round(number_, 3);
+
+                        }
+                        
                     }
                 }
             }
-            return res/k;
+            return Math.Round(res/k,3);
         }
     }
 }
