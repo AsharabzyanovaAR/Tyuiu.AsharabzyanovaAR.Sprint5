@@ -13,8 +13,9 @@ namespace Tyuiu.AsharabzyanovaAR.Sprint5.Task5.V6.Lib
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
-                while ((line =reader.ReadLine() ) != null)
+                while ((line = reader.ReadLine() ) != null)
                 {
+                    line = line.Replace('.', ',');
                     k += 1;
                     res = res + Math.Round(Convert.ToDouble(line),3);
                 }
